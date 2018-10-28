@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Browser Fallbacks Example - No Fallbacks</title>
+</head>
+
+<body>
+  <h1>Browser Fallbacks Example</h1>
+  <h2>This kitten will look OK in Chrome, but not IE</h2>
+  <p><a href="fallbacks-example.html">Show example with fallbacks</a></p>
+  <div class="img-polaroid">
+    <img src="images/kitten.jpg" alt="A lovely kitten">
+  </div>
+  <h3>CSS</h3>
+  <pre>
+    <code>
+.img-polaroid {
+/* Create a polaroid border */
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+/* Indicate the padding required between image and border */
+padding: 4px;
+
+/* Ensure the border does not extend horizontally beyond the image size */
+display: inline-block;
+}
+    </code>
+  </pre>
+</body>
+</html>
